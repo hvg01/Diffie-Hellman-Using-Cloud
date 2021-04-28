@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<head>
+	<title>Diffie Hellman | Cloud</title>
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+	<!--main CSS-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<!--Font Awesome-->
+	<script src="{{ url_for('static', filename='js/all.js') }}"></script>
+	<!-- Website Icon -->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/icon.ico') }}">
+	<meta charset="UTF-8"> 
+	<style>
+
+	</style>
+</head>
+<body>
+	<!--Preloader-->
+	<div class="preloader d-flex justify-content-center align-items-center">
+		<img src="{{ url_for('static', filename='img/loading.gif') }}" alt="LOADING!">
+	</div>
+	<!--End Preloader-->
+	<div class="bcg">		
+        <!--Header Section-->
+        <header class="header" id="header">
+            <div class="container"> 
+                    <div class="d-flex justify-content-center py-5"> 
+                        <div class="col-xl-6 text-center my-3">
+                            <h1 class="font-weight-bolder align-self-center mx-1">CCL MINI PROJECT</h1>
+                            <div class="brand-underline"></div>	
+                        </div>		
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Header Section-->
+	</div>
+
+	<!-- About Section -->
+	<div class="container p-5">
+		<div class="row">
+		    <div class="col-2 mx-auto my-3 text-center">
+		    	<a class="btn msg-btn" href="/upload-file">UPLOAD</a>
+		    </div>	
+		    <div class="col-2 mx-auto my-3 text-center">
+		    	<a class="btn msg-btn" href="/download-file">DOWNLOAD</a>
+		    </div>	
+		    <div class="col-2 mx-auto my-3 text-center">
+		    	<a class="btn msg-btn" href="/file-directory">FILES</a>
+		    </div>	
+		    <div class="col-2 mx-auto my-3 text-center">
+		    	<a class="btn msg-btn" href="/public-key-directory">PUBLIC KEYS</a>
+		    </div>	
+		    <div class="col-2 mx-auto my-3 text-center">
+		    	<a class="btn msg-btn" href="/register">REGISTER</a>
+		    </div>	
+		</div>
+		
+	</div>
+
+	<section class="about" id="about">
+		<div class="container">
+			<div class="row justify">
+				<div class="col-12 mx-auto my-3 col-md-6">
+					<h1 class="font-weight-bolder">DIFFIE HELLMAN</h1>
+					<p style="color: gray; font-size:1rem">The Diffie-Hellman algorithm is being used to establish a shared secret that can be used for secret communications while exchanging data over a public network using the elliptic curve to generate points and get the secret key using the parameters. 
+					For the sake of simplicity, we consider only 4 variables one prime P and G (a primitive root of P) and two private values a and b.
+					P and G are both publicly available numbers. Users (say Alice and Bob) pick private values a and b and they generate a key and exchange it publicly, the opposite person received the key and from that generates a secret key after which they have the same secret key to encrypt.</p>
+					<h6 style="color: gray; font-size: 1rem">
+							The user gets to choose from one of the following options:
+					</h6>
+					<div class="d-flex py-2 flex-wrap">
+						<p class="info-pipe">ENCRYPT AND DECRYPT A FILE WITH PAIR OF KEYS</p>
+					</div>
+					<div class="d-flex py-2 flex-wrap">
+						<p class="info-pipe">DOWNLOAD FILE IN ENCRYPTED FORMAT</p>
+					</div>
+					<div class="d-flex py-2 flex-wrap">
+						<p class="info-pipe">DOWNLOAD PUBLIC KEY OF USER TO WHOM FILE IS TO BE SENT</p>	
+					</div>
+					<div class="d-flex py-2 flex-wrap">
+						<p class="info-pipe">REGISTER TO GENERATE PUBLIC AND PRIVATE KEYS</p>	
+					</div>
+				</div>
+				<!-- About img -->
+                <div class="col-12 mx-auto my-3 col-md-6">
+                    <!-- Img Container -->
+                    <div class="png-container d-flex py-5">
+                        <img src="{{ url_for('static', filename='img/about.png') }}" alt="">
+                    </div>
+                </div>
+			</div>
+		</div>													
+	</section>
+
+	<!-- End About Section  -->
+
+	<!-- Footer -->
+	<footer class="footer py-3">
+		<div class="footer-text col-12 d-flex justify-content-center my-2">
+			DEVELOPED BY
+		</div>
+		<div class="footer-text col-12 d-flex justify-content-center my-2">
+			SHARDUL | SIDDHARTH | UNNATI
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+</body>
+<!--jQuery-->
+<script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+<!--Bootstrap JS-->
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+<!--Script JS-->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</html>
+
+
+
+

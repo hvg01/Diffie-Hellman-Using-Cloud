@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<head>
+	<title>Diffie Hellman | Private Key</title>
+	<!--Bootstrap CSS-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+	<!--main CSS-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<!--Font Awesome-->
+	<script src="{{ url_for('static', filename='js/all.js') }}"></script>
+	<!-- Website Icon -->
+	<link rel="shortcut icon" href="{{ url_for('static', filename='img/icon.ico') }}">
+	<meta charset="UTF-8"> 
+	<style>
+
+	</style>
+</head>
+<body>
+		<!--Preloader-->
+	<div class="preloader d-flex justify-content-center align-items-center">
+		<img src="{{ url_for('static', filename='img/loading.gif') }}" alt="LOADING!">
+	</div>
+	<!--End Preloader-->
+	<div class="bcg">
+        <!--Header Section-->
+        <header class="header" id="header">
+            <div class="container"> 
+                    <div class="d-flex justify-content-center py-5"> 
+                        <div class="col-xl-6 text-center my-3">
+                            <h1 class="font-weight-bolder align-self-center mx-1">PRIVATE KEY</h1>
+                            <div class="brand-underline"></div>	
+                        </div>		
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--End Header Section-->
+	</div>
+	<!--Display Key Section-->
+    <section id="team">
+        <div class="container py-5">
+            <div class="row">
+            	<div class="col-12 d-flex flex-wrap justify-content-center">
+                    <h6 style=" font-size: 1rem">
+                            Your one-time generated private key is
+                    </h6>
+                </div>
+                <div class="col-12 d-flex flex-wrap justify-content-center py-5">
+                    <h1 class="font-weight-bolder align-self-center mx-1">{{privatekey}}</h1>
+                </div>	
+                <div class="col-12 d-flex flex-wrap justify-content-center">
+                    <h6 style=" font-size: 1rem">
+                            For safety purpose, we keep no backup of this key.
+                    </h6>
+                </div>
+                <div class="col-12 d-flex flex-wrap justify-content-center">
+                    <h6 style=" font-size: 1rem">
+                            Refrain yourself from sharing this key with anyone.
+                    </h6>
+                </div>
+            </div>
+            <!-- Buttons -->
+			<div class="row p-4">
+			    <div class="col-12 my-3 text-center">
+			    <a class="btn msg-btn" href="home">HOME</a>
+			    </div>
+			</div>
+        </div>
+    </section>
+    <!--End Display Key Section-->
+    <!-- Footer -->
+	<footer class="footer py-3">
+		<div class="footer-text col-12 d-flex justify-content-center my-2">
+			DEVELOPED BY
+		</div>
+		<div class="footer-text col-12 d-flex justify-content-center my-2">
+			SHARDUL | SIDDHARTH | UNNATI
+		</div>
+	</footer>
+	<!-- End Footer -->
+
+</body>
+<!--jQuery-->
+<script src="{{ url_for('static', filename='js/jquery-3.4.1.min.js') }}"></script>
+<!--Bootstrap JS-->
+<script src="{{ url_for('static', filename='js/bootstrap.bundle.min.js') }}"></script>
+<!--Script JS-->
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</html>
